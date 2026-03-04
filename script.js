@@ -2,19 +2,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- Data ---
     const fleetData = [
-        {
-            name: "Honda Mobilio",
-            type: "Six seater comfortable shuttle",
-            img: "assets/mobilio.jpg",
-            features: ["Air con", "Privacy glass", "Comfy seats", "Luggage"]
-        },
-        {
-            name: "Polo Vivo Sedan",
-            type: "Sedan four seater",
-            img: "assets/polo.jpg",
-            features: ["Air con", "Leather seats", "Privacy glass"]
-        }
-    ];
+    {
+        name: "Honda Mobilio",
+        type: "Six seater comfortable shuttle",
+        img: "images/mob.png",
+        features: ["Air con", "Privacy glass", "Comfy seats", "Luggage"]
+    },
+    {
+        name: "Polo Vivo Sedan",
+        type: "Sedan four seater",
+        img: "images/polo.png",
+        features: ["Air con", "Leather seats", "Privacy glass"]
+    }
+];
 
     const defaultReviews = [
         { name: "Sarah M.", rating: 5, text: "I struggled finding Uber so I called CoolRiders and they arrived within 15 minutes." },
@@ -223,4 +223,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize
     renderFleet();
     loadReviews();
+
 });
