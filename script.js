@@ -33,20 +33,57 @@ document.addEventListener('DOMContentLoaded', () => {
     // Duplicate data for infinite loop illusion
     const loopData = [...fleetData, ...fleetData]; 
     
-    function renderFleet() {
-        fleetTrack.innerHTML = loopData.map(car => `
-            <div class="fleet-slide">
-                ${car.img ? `<img src="${car.img}" alt="${car.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">` : ''}
-                <div class="placeholder-img" ${car.img ? 'style="display:none"' : ''}>
-                    <div>
-                        <p>Insert vehicle image here</p>
-                        <small>${car.name}</small>
-                    </div>
-                </div>
+  function renderFleet() {
+    fleetTrack.innerHTML = "";
+
+    loopData.forEach((car) => {
+        const slide = document.createElement("div");
+        slide.className = "fleet-slide";
+
+        // Create IMG
+        const img = document.createElement("img");
+        img.alt = car.name;
+
+        // GitHub Pages safe path resolution
+        img.src = new URL(car.img, document.baseURI).href;
+
+        // Placeholder
+        const placeholder = document.createElement("div");
+        placeholder.className = "placeholder-img";
+        placeholder.innerHTML = `
+            <div>
+                <p>Insert vehicle image here</p>
+                <small>${car.name}</small>
             </div>
-        `).join('');
-        updateFleetInfo(0);
-    }
+        `;
+
+        // When image loads: SHOW image, HIDE placeholder (force with !important)
+        img.onload = () => {
+            img.style.setProperty("display", "block", "important");
+            img.style.setProperty("width", "100%", "important");
+            img.style.setProperty("height", "100%", "important");
+            img.style.setProperty("object-fit", "cover", "important");
+
+            placeholder.style.setProperty("display", "none", "important");
+        };
+
+        // If image fails: HIDE image, SHOW placeholder
+        img.onerror = () => {
+            img.style.setProperty("display", "none", "important");
+            placeholder.style.setProperty("display", "flex", "important");
+            console.log("Image failed to load:", img.src);
+        };
+
+        // Default state before load
+        img.style.setProperty("display", "block", "important");
+
+        slide.appendChild(img);
+        slide.appendChild(placeholder);
+        fleetTrack.appendChild(slide);
+    });
+
+    updateFleetInfo(0);
+}
 
     function updateFleetInfo(index) {
         // Modulo to handle the "infinite" indexes
@@ -225,3 +262,4 @@ document.addEventListener('DOMContentLoaded', () => {
     loadReviews();
 
 });
+
