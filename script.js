@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     {
         name: "Honda Mobilio",
         type: "Six seater comfortable shuttle",
-        img: "images/mob.jpg",
+        img: "images/mob.png",
         features: ["Air con", "Privacy glass", "Comfy seats", "Luggage"]
     },
     {
         name: "Polo Vivo Sedan",
         type: "Sedan four seater",
-        img: "images/polo.jpg",
+        img: "images/polo.png",
         features: ["Air con", "Leather seats", "Privacy glass"]
     }
 ];
@@ -262,5 +262,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadReviews();
 
 });
+
 
 
