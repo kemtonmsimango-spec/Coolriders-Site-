@@ -15,7 +15,7 @@
 
     <header class="header">
         <div class="container header-content">
-            <a href="#" class="logo">Coolriders Hermanus </a>
+            <a href="#" class="logo">Coolriders Hermanus</a>
             
             <nav class="nav-menu">
                 <a href="#fleet">Fleet</a>
@@ -28,18 +28,19 @@
                 <a href="https://wa.me/27796753908" target="_blank" class="btn btn-primary nav-btn">Book Now</a>
             </div>
 
-            <button class="mobile-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="mobile-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
         </div>
     </header>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobileMenu">
         <a href="#fleet" class="mobile-link">Fleet</a>
         <a href="#services" class="mobile-link">Services</a>
         <a href="#testimonials" class="mobile-link">Testimonials</a>
+        <a href="https://wa.me/27796753908" target="_blank" class="btn btn-whatsapp mobile-btn">Book on WhatsApp</a>
     </div>
 
     <main>
@@ -47,7 +48,7 @@
             <div class="container hero-grid">
                 <div class="hero-text reveal-up">
                     <div class="badge">Hermanus Trusted Shuttle Service</div>
-                    <h1>Struggling to find a reliable transport in Hermanus?</h1>
+                    <h1>Struggling to find reliable transport in Hermanus?</h1>
                     <h2>Coolriders got you covered.</h2>
                     <p class="hero-sub">Reliable door to door transport, comfortable vehicles, and quick response time.</p>
                     
@@ -61,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="hero-visual reveal-left">
+                <div class="hero-visual reveal-left" id="fleet">
                     <div class="glass-card fleet-widget">
                         <div class="widget-header">
                             <h4>Our Premium Fleet</h4>
@@ -77,10 +78,10 @@
                             <div class="fleet-info" id="fleetInfo">
                                 </div>
                             <div class="nav-arrows">
-                                <button id="prevBtn" aria-label="Previous">
+                                <button id="prevBtn" aria-label="Previous Vehicle">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
                                 </button>
-                                <button id="nextBtn" aria-label="Next">
+                                <button id="nextBtn" aria-label="Next Vehicle">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
                                 </button>
                             </div>
@@ -95,20 +96,13 @@
                 <p class="section-label">Trusted by premium hotels and guest houses</p>
                 <div class="marquee-wrapper">
                     <div class="marquee-content">
-                        <span>Auberge Burgundy Hotel</span>
-                        <span class="dot">•</span>
-                        <span>Whale Rock Lodge</span>
-                        <span class="dot">•</span>
-                        <span>Whale on Main</span>
-                        <span class="dot">•</span>
-                        <span>Montivigus</span>
-                        <span class="dot">•</span>
-                        <span>Auberge Burgundy Hotel</span>
-                        <span class="dot">•</span>
-                        <span>Whale Rock Lodge</span>
-                        <span class="dot">•</span>
-                        <span>Whale on Main</span>
-                        <span class="dot">•</span>
+                        <span>Auberge Burgundy Hotel</span><span class="dot">•</span>
+                        <span>Whale Rock Lodge</span><span class="dot">•</span>
+                        <span>Whale on Main</span><span class="dot">•</span>
+                        <span>Montivigus</span><span class="dot">•</span>
+                        <span>Auberge Burgundy Hotel</span><span class="dot">•</span>
+                        <span>Whale Rock Lodge</span><span class="dot">•</span>
+                        <span>Whale on Main</span><span class="dot">•</span>
                         <span>Montivigus</span>
                     </div>
                 </div>
@@ -165,11 +159,11 @@
                         <h3>Rate your ride</h3>
                         <form id="reviewForm">
                             <div class="form-group">
-                                <label>Name</label>
+                                <label for="reviewName">Name</label>
                                 <input type="text" id="reviewName" required placeholder="John Doe">
                             </div>
                             <div class="form-group">
-                                <label>Rating</label>
+                                <label for="reviewRating">Rating</label>
                                 <select id="reviewRating">
                                     <option value="5">★★★★★ Excellent</option>
                                     <option value="4">★★★★☆ Good</option>
@@ -179,8 +173,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Review</label>
-                                <textarea id="reviewText" required placeholder="Tell us about your trip..."></textarea>
+                                <label for="reviewText">Review</label>
+                                <textarea id="reviewText" required placeholder="Tell us about your trip..." rows="4"></textarea>
                             </div>
                             <button type="submit" class="btn btn-accent full-width">Submit Review</button>
                         </form>
@@ -193,7 +187,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <h3>Coolriders Hermanus </h3>
+                <h3>Coolriders Hermanus</h3>
                 <p>Tours and Transfers</p>
                 <a href="tel:0796753908" class="footer-phone">0796753908</a>
             </div>
