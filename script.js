@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Testimonials System ---
     const reviews = [
-        { name: "Sarah Jenkins", rating: 5, text: "Best transfer service in Hermanus. Prompt and professional." },
-        { name: "Mark Thorne", rating: 5, text: "The Luxury SUV was spotless. Highly recommended for airport runs." }
+        { name: "Sarah Jenkins", rating: 5, text: "Took a trip with family, everyone was comfortable. Even my mom was happy and she complains about everything 😂" },
+        { name: "Mark Thorne", rating: 5, text: "Not gonna lie, I was expecting something average but this was actually proper service. Respect." }
 		
     ];
 
