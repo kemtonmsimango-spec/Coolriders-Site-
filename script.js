@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Testimonials System ---
     const reviews = [
-        { name: "Sarah Jenkins", rating: 5, text: "Took a trip with family, everyone was comfortable. Even my mom was happy and she complains about everything 😂" },
+        { name: "Sarah Jenkins", rating: 5, text: "Consistently good. We are swallows and we have been using Cool riders service for several years. They are quick to respond and always on time and I always feel completely safe. They have collected our children and our friends many many times. I can highly recommend them. Not only are they professional but they are really nice people who you can completely trust. This is a business that is going to go places, watch this space !" },
         { name: "Mark Thorne", rating: 5, text: "Not gonna lie, I was expecting something average but this was actually proper service. Respect." }
 		
     ];
