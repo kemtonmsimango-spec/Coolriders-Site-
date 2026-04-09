@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Coolriders Hermanus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Coolriders Hermanus</a>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="fleet.html">Fleet</a>
+                <a href="services.html">Services</a>
+                <a href="testimonials.html">Testimonials</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:0796753908" class="phone-link">0796753908</a>
+                <a href="https://wa.me/27796753908" target="_blank" class="btn btn-primary nav-btn">Book Now</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="fleet.html" class="mobile-link">Fleet</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="testimonials.html" class="mobile-link">Testimonials</a>
+        <a href="https://wa.me/27796753908" target="_blank" class="btn btn-whatsapp mobile-btn">Book on WhatsApp</a>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="reveal-up" style="text-align:center;">What our clients say</h1>
+                <div class="testimonial-layout">
+                    <div class="testimonial-wrapper glass-card reveal-left">
+                        <div class="testimonial-track" id="reviewTrack"></div>
+                    </div>
+                    <div class="review-form glass-card reveal-right">
+                        <h3>Rate your ride</h3>
+                        <form id="reviewForm">
+                            <div class="form-group">
+                                <label for="reviewName">Name</label>
+                                <input type="text" id="reviewName" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewRating">Rating</label>
+                                <select id="reviewRating">
+                                    <option value="5">★★★★★ Excellent</option>
+                                    <option value="4">★★★★☆ Good</option>
+                                    <option value="3">★★★☆☆ Average</option>
+                                    <option value="2">★★☆☆☆ Poor</option>
+                                    <option value="1">★☆☆☆☆ Terrible</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewText">Review</label>
+                                <textarea id="reviewText" required placeholder="Tell us about your trip..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent full-width">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Coolriders Hermanus</h3>
+                <p>Tours and Transfers</p>
+                <a href="tel:0796753908" class="footer-phone">0796753908</a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="fleet.html">Fleet</a>
+                <a href="services.html">Services</a>
+                <a href="testimonials.html">Testimonials</a>
+            </div>
+            <div class="footer-cta">
+                <a href="https://wa.me/27796753908" target="_blank" class="btn btn-whatsapp">Book Now on WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CoolRiders. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
