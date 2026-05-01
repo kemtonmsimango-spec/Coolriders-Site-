@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolriders | Premium Tours & Local Experiences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Coolriders Logo" class="logo-img">
+                Coolriders Hermanus
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="tours.html" class="active">Tours</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="about.html">About</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/27796753908" target="_blank" class="btn btn-whatsapp nav-btn">Book on WhatsApp</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="tours.html" class="mobile-link">Tours</a>
+        <a href="testimonials.html" class="mobile-link">Testimonials</a>
+        <a href="about.html" class="mobile-link">About</a>
+        <a href="https://wa.me/27796753908" target="_blank" class="btn btn-whatsapp mobile-btn">Book on WhatsApp</a>
+        <a href="tel:0796753908" class="btn btn-primary mobile-btn">Call: 079 675 3908</a>
+    </div>
+
+    <main>
+        <section class="tour-hero">
+            <div class="tour-hero-overlay"></div>
+            <div class="container relative z-10">
+                <div class="tour-hero-content reveal-up">
+                    <div class="badge">Curated Journeys</div>
+                    <h1>Wine Tour Experiences with Coolriders</h1>
+                    <p>Comfortable, guided transport through the renowned Hemel-en-Aarde valley and beyond.</p>
+                    <a href="#wine-planner" class="btn btn-primary mt-6">Plan Your Tour</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="wine-planner" class="white-section section-padding">
+            <div class="container max-w-lg">
+                <div class="section-header-center reveal-up">
+                    <h2 class="dark-heading">Build Your Ideal Wine Tour</h2>
+                    <p class="subtitle-dark">Select the estates you wish to visit and let us handle the driving.</p>
+                </div>
+
+                <div class="wine-planner-card reveal-up">
+                    <h3 class="planner-title">Select Wineries</h3>
+                    <p class="planner-subtitle">Choose your preferred destinations for a tailored itinerary.</p>
+                    
+                    <div class="wine-selector-grid">
+                        <label class="wine-pill">
+                            <input type="checkbox" value="Creation">
+                            <span>Creation</span>
+                        </label>
+                        <label class="wine-pill">
+                            <input type="checkbox" value="Spookfontein">
+                            <span>Spookfontein</span>
+                        </label>
+                        <label class="wine-pill">
+                            <input type="checkbox" value="La Vierge">
+                            <span>La Vierge</span>
+                        </label>
+                        <label class="wine-pill">
+                            <input type="checkbox" value="Hamilton Russell">
+                            <span>Hamilton Russell</span>
+                        </label>
+                        <label class="wine-pill">
+                            <input type="checkbox" value="Hasher Family Wines">
+                            <span>Hasher Family Wines</span>
+                        </label>
+                        <label class="wine-pill">
+                            <input type="checkbox" value="Newton Johnson">
+                            <span>Newton Johnson</span>
+                        </label>
+                        <label class="wine-pill">
+                            <input type="checkbox" value="High Season">
+                            <span>High Season</span>
+                        </label>
+                        <label class="wine-pill">
+                            <input type="checkbox" value="Ataraxia">
+                            <span>Ataraxia</span>
+                        </label>
+                    </div>
+
+                    <button id="buildTourBtn" class="btn btn-primary-solid btn-full mt-6 pulse-anim">Start Your Wine Tour Plan</button>
+                    <p class="planner-note">Clicking this will prepare a message in WhatsApp for fast, easy booking.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding impact-section">
+            <div class="container">
+                <div class="section-header-center reveal-up">
+                    <h2 class="premium-white-heading">More Premium Local Experiences</h2>
+                    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Discover the breathtaking views of the Western Cape coastlines and mountain passes with our reliable private transport.</p>
+                </div>
+
+                <div class="tours-grid mt-6">
+                    <div class="white-card tour-card reveal-up">
+                        <h3 class="dark-heading" style="margin-bottom: 1rem; font-size: 1.3rem;">Scenic Local Experiences</h3>
+                        <p style="color: var(--text-dark-muted); flex-grow: 1; margin-bottom: 2rem; font-size: 0.95rem;">Sit back and take in the breathtaking views of the Western Cape coastlines and mountain passes in comfort.</p>
+                        <a href="https://wa.me/27796753908?text=I%20am%20interested%20in%20Scenic%20Local%20Experiences" target="_blank" class="btn btn-primary-solid tour-btn">Enquire Now</a>
+                    </div>
+
+                    <div class="white-card tour-card reveal-up" style="transition-delay: 100ms;">
+                        <h3 class="dark-heading" style="margin-bottom: 1rem; font-size: 1.3rem;">Custom Private Tours</h3>
+                        <p style="color: var(--text-dark-muted); flex-grow: 1; margin-bottom: 2rem; font-size: 0.95rem;">Have a specific itinerary? We provide custom guided transport allowing you to craft your perfect day out.</p>
+                        <a href="https://wa.me/27796753908?text=I%20want%20to%20arrange%20a%20Custom%20Private%20Tour" target="_blank" class="btn btn-primary-solid tour-btn">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Coolriders Hermanus</h3>
+                <p>Premium Tours and Transfers</p>
+                <p class="trust-statement">Safe, reliable, and professional transport trusted by locals and visitors alike.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="tours.html">Tours</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <a href="tel:0796753908" class="footer-phone">079 675 3908</a>
+                <a href="https://wa.me/27796753908" target="_blank" class="footer-wa">WhatsApp Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Coolriders Hermanus. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
